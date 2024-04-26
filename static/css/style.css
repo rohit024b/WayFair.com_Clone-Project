@@ -122,13 +122,13 @@
     color: lightgray;
 }
 .ProfCart{
-    width: 20%;
+    width: 14%;
     box-sizing: inherit ;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
-    gap: 10px;
+    gap: 17px;
 }
 .ProfCart > button{
     display: flex;
@@ -136,15 +136,8 @@
     align-content: center;
     
 } 
-#StillnavBar{
-    /* Initially hidden above the viewport */
-    top: -70px;
-    left: 0;
-    width: 100%;
-    background-color: #FFFFFF;
-    transition: top 0.1s ease-in-out; /* Smooth transition effect */
-    /* Ensure it's above other content */
-    z-index: 1000; 
+.ProfCart > button :hover{
+    color: #7B189F;
 }
 
 .navBarComps{
@@ -187,7 +180,49 @@
     white-space: nowrap;
     display: inline-block;
 }
-
+#chatBot{
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    /* background-color: #7B189F; */
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #7B189F;
+    bottom: 21px;
+    right: 30px;
+}
+#gToTop{
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    /* background-color: #7B189F; */
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #7B189F;
+    bottom: 75px;
+    right: 30px;
+    transition: right 0.1s ease-in-out;
+}
+#StillnavBar{
+    /* Initially hidden above the viewport */
+    top: -70px;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    transition: top 0.1s ease-in-out; /* Smooth transition effect */
+    /* Ensure it's above other content */
+    z-index: 1000; 
+}
 
 /* mediaQuesries */
 
@@ -208,7 +243,6 @@
     }
     .ProfCart > button span{
         display: none;
-        
     } 
   }
   
