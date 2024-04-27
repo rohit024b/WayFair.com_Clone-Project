@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: center;   
 }
+
 .topNavSection2{
     display: none;
 }
@@ -75,10 +76,15 @@
     /* width: 150px; */
     width: 12%;
 }
-.rightNavData a, ul{
+.rightNavData > #topNavRight{
     gap: 10px;
     text-decoration: none;
     list-style: none;
+    display: flex;
+}
+.rightNavData > #topNavRight a{
+    gap: 10px;
+    text-decoration: none;
     display: flex;
 }
 .searchCont{
@@ -139,39 +145,43 @@
 .ProfCart > button :hover{
     color: #7B189F;
 }
-
-.navBarComps{
-    width: 100%;
+.topNavSectionNav{
+    max-width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     border: 1px solid lightgray;
-    position: relative;
-    box-sizing: inherit;
-    unicode-bidi: isolate;
+}
+.navBarComps{
+    /* margin: auto; */
     /* width: 90vw; */
     padding: 7px;
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+#categorylists {
+    position: relative;
     display: flex;
     align-items: center;
     align-content: center;
-}
-.navBarComps > ul li{
-    display: list-item;
-    text-align: center;
-    unicode-bidi: isolate;
-    box-sizing: inherit;
-    display: flex;
     justify-content: center;
-    /* gap: 17px; */
     list-style: none;
     padding: 0;
-    margin: 0;
-    
+    margin: 0;   
 }
-.navBarComps > ul span{
+#categorylists li{
+    display: flex;
+    justify-content: center;
+}
+#categorylists span{
     color: black;
     font-size: 16px;
     text-decoration: none;
     white-space: nowrap;
 }
-.navBarComps > ul span:hover{
+#categorylists span:hover{
     color: #7B189F;
     text-decoration: underline 2px ;
     text-underline-offset: 5px;
@@ -223,7 +233,17 @@
     /* Ensure it's above other content */
     z-index: 1000; 
 }
+.column {
+        float: left;
+        width: 20%; /* Five columns */
+    }
 
+    @media only screen and (max-width: 600px) {
+        /* On small screens, show one column */
+        .column {
+            width: 100%;
+        }
+    }
 /* mediaQuesries */
 
   @media screen and (min-width: 1154px) and (max-width: 1362px){
