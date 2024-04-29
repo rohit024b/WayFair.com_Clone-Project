@@ -1,352 +1,572 @@
 * {
-    /* box-sizing: border-box   ; */
-    margin: auto;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-    outline: none;
-    border: none;
-    scroll-behavior: smooth;
+  /* box-sizing: border-box   ; */
+  margin: auto;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
 }
 /* body { */
-    /* max-width: 1200px; Adjust this value according to your design */
-    /* margin: 0 auto; */
+/* max-width: 1200px; Adjust this value according to your design */
+/* margin: 0 auto; */
 /* } */
-.marAuto{
-    margin: 0px;
+.marAuto {
+  margin: 0px;
 }
-.bgpurlple{
-    background-color: #7B189F;
+.bgpurlple {
+  background-color: #7b189f;
 }
-.topNavSection{
-    width: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;   
+.topNavSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.topNavSection2{
+.topNavSection2 {
+  display: none;
+}
+
+.topBarComponants {
+  width: 90vw;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.spaceBet {
+  justify-content: space-between;
+}
+.spaceArr {
+  justify-content: space-around;
+}
+.spaceEvn {
+  justify-content: space-evenly;
+}
+.leftData > h5,
+a {
+  color: #ffffff;
+  font-weight: 100;
+}
+.leftData {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.rightNavData {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.leftData > h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.rightNavData li:hover {
+  cursor: pointer;
+  /* color: #FFFFFF; */
+  text-decoration: underline;
+}
+.logo {
+  /* width: 150px; */
+  width: 12%;
+}
+.rightNavData > #topNavRight {
+  gap: 10px;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+.rightNavData > #topNavRight a {
+  gap: 10px;
+  text-decoration: none;
+  display: flex;
+}
+.searchCont {
+  width: 60%;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btnAndInputBox {
+  width: 100%;
+  height: 100%;
+}
+
+#searchAndInput {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+}
+#searchAndInput > input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-size: 18px;
+}
+.gap {
+  gap: 20px;
+}
+#searchAndInput > input::placeholder {
+  line-height: 50px;
+  font-size: 18px;
+  color: lightgray;
+}
+.ProfCart {
+  width: auto;
+  height: 50px;
+  box-sizing: inherit;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 17px;
+}
+.ProfCart > button {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+}
+button:hover .proficon,
+button:hover .proftxt {
+  color: #7b189f;
+}
+.topNavSectionNav {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+}
+.navBarComps {
+  /* margin: auto; */
+  /* width: 90vw; */
+  padding: 7px;
+  display: inline-block;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#categorylists {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#categorylists #categories-btn {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.categories-btns {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+#categorylists .categories-btns:hover {
+  color: #7b189f;
+  text-decoration: underline 2px;
+  text-underline-offset: 5px;
+}
+.myLink {
+  white-space: nowrap;
+  display: inline-block;
+}
+#chatBot {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  /* background-color: #7B189F; */
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid #7b189f;
+  bottom: 21px;
+  right: 30px;
+}
+#gToTop {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  /* background-color: #7B189F; */
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid #7b189f;
+  bottom: 75px;
+  right: 30px;
+  transition: right 0.1s ease-in-out;
+}
+#StillnavBar {
+  /* Initially hidden above the viewport */
+  top: -70px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
+  transition: top 0.1s ease-in-out; /* Smooth transition effect */
+  /* Ensure it's above other content */
+  z-index: 100000;
+}
+#StillnavBar > .topBarComponants {
+  background-color: #ffffff;
+}
+#dropdown-content {
+  float: top;
+  /* top: 18%; */
+  width: 98%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  flex-wrap: nowrap;
+  gap: 30px;
+  padding-left: 30px;
+  column-gap: 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  z-index: 1000;
+  display: none;
+}
+.popup-menu-SignIn {
+  /* float: right; */
+  /* top: 13%; */
+  /* width: 98%; */
+  right: 6%;
+  /* bottom: 44%; */
+  margin: -13px;
+  padding: 20px;
+  position: absolute;
+  flex-wrap: nowrap;
+  gap: 30px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  gap: 10px;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  /* overflow: hidden; */
+  display: none;
+  z-index: 10000;
+}
+
+.popup-menu-SignIn a {
+  text-decoration: none;
+}
+#topOfpopUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(163, 160, 160);
+  padding-bottom: 15px;
+}
+#listUnderPopup {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding-bottom: 15px;
+  list-style: none;
+}
+#listUnderPopup li {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+}
+
+#listUnderPopup li:hover #dta2 {
+  text-decoration: underline 1.5px #7b189f;
+  text-underline-offset: 5px;
+}
+#listUnderPopup li:hover #dta1,
+#listUnderPopup li:hover #dta {
+  color: #7b189f;
+}
+
+#listUnderPopup i {
+  font-size: 22px;
+}
+#listUnderPopup a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  list-style: none;
+  color: black;
+  text-align: left;
+  gap: 10px;
+}
+#listUnderPopup ul {
+  margin: 0;
+  list-style: none;
+}
+#signInInPopUp {
+  width: 250px;
+  height: 50px;
+  background-color: #7b189f;
+  border-radius: 50px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#signInInPopUp:hover {
+  background-color: #9840b8;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
+}
+#signInInPopUp > #signIntxtInPopup {
+  text-align: center;
+}
+#signInInPopUp + a {
+  color: #7b189f;
+  text-decoration: underline;
+}
+#signInInPopUp + a:hover {
+  color: #7b189f;
+  text-decoration: none;
+}
+.column {
+  float: left;
+  margin: auto;
+  width: 15%;
+  margin-left: 20px;
+}
+.column > h3 {
+  color: #7b189f;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.column > h3 + ul {
+  margin-top: 0px;
+  margin-bottom: 25px;
+  list-style: none;
+  font-size: 12px;
+  /* display: none; */
+  /* display: block; */
+}
+.column > h3 + ul > li {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.column > h3 + ul > li > a {
+  color: black;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+}
+.column > h3 + ul > li > a:hover {
+  color: #7b189f;
+  text-decoration: underline 1px;
+  /* text-underline-offset: 5px; */
+}
+#extra-content {
+  float: left;
+  margin: auto;
+  margin: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  gap: 15px;
+}
+#textimgCategory {
+  padding: 10px;
+}
+#catagImg {
+  width: 300px;
+  border-radius: 10px;
+}
+#textimgCategory:hover {
+  background-color: #fffdf8;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/* mediaQuesries */
+
+@media screen and (min-width: 1154px) and (max-width: 1360px) {
+  .navBarComps > #categorylists span {
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1145px) and (max-width: 1154px) {
+  .navBarComps > #categorylists span {
+    color: black;
+    font-size: 11px;
+    text-decoration: none;
+  }
+  .ProfCart > button span {
     display: none;
+  }
 }
 
-.topBarComponants{
+@media screen and (min-width: 1016px) and (max-width: 1145px) {
+  .navBarComps > #categorylists span {
+    color: black;
+    font-size: 11px;
+    text-decoration: none;
+  }
+  .ProfCart > button span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1016px) {
+  .navBarComps {
+    width: 100%;
+    border: 1px solid lightgray;
+    display: block;
+    flex-wrap: wrap;
+  }
+  .navBarComps > #categorylists {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+  }
+
+  .navBarComps > #categorylists span {
+    color: black;
+    font-size: 10px;
+    text-decoration: none;
+  }
+  .ProfCart > button span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .navBarComps {
+    display: none;
+  }
+
+  .rightNavData {
+    display: none;
+  }
+  .topBarComponants {
     width: 90vw;
     padding: 7px;
     display: flex;
     align-items: center;
     align-content: center;
-}
-.spaceBet{
-    justify-content: space-between;
-}
-.spaceArr{
-    justify-content: space-around;
-}
-.spaceEvn{
-    justify-content: space-evenly;
-}
-.leftData > h5 , a{
-    color: #FFFFFF;
-    font-weight: 100;
-}
-.leftData {
-    display: flex;
-    align-items: center;
-    align-content: center;
+  }
+  .spaceBet {
     justify-content: center;
-    text-align:center;
-}
-.rightNavData{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-.leftData > h5:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
-.rightNavData li:hover{
-    cursor: pointer;
-    /* color: #FFFFFF; */
-    text-decoration: underline;
-}
-.logo{
-    /* width: 150px; */
-    width: 12%;
-}
-.rightNavData > #topNavRight{
-    gap: 10px;
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-}
-.rightNavData > #topNavRight a{
-    gap: 10px;
-    text-decoration: none;
-    display: flex;
-}
-.searchCont{
-    width: 60%;
-    height: 50px;
-    border: 1px solid black;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.btnAndInputBox{
-    width: 100%;
-    height: 100%;
-    
-}
+  }
 
-#searchAndInput{
+  .topNavSection:nth-child(2) {
+    display: none;
+  }
+  .topNavSection2 {
+    /* display: block; */
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
-    align-content: center;
-    gap: 20px;
-}
-#searchAndInput > input{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    font-size: 18px;
-}
-.gap{
-    gap: 20px;
-}
-#searchAndInput > input::placeholder{
-    line-height: 50px;
-    font-size: 18px;
-    color: lightgray;
-}
-.ProfCart{
-    width: 14%;
-    box-sizing: inherit ;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    gap: 17px;
-}
-.ProfCart > button{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    
-} 
-.ProfCart > button :hover{
-    color: #7B189F;
-}
-.topNavSectionNav{
-    max-width: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    border: 1px solid lightgray;
-}
-.navBarComps{
-    /* margin: auto; */
-    /* width: 90vw; */
-    padding: 7px;
-    display: inline-block;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-#categorylists {
-    position: relative;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;   
-}
-#categorylists li{
-    display: flex;
-    justify-content: center;
-}
-#categorylists span{
-    color: black;
-    font-size: 16px;
-    text-decoration: none;
-    white-space: nowrap;
-}
-#categorylists span:hover{
-    color: #7B189F;
-    text-decoration: underline 2px ;
-    text-underline-offset: 5px;
-}
-.myLink{
-    white-space: nowrap;
-    display: inline-block;
-}
-#chatBot{
-    width: 45px;
-    height: 45px;
-    position: fixed;
-    /* background-color: #7B189F; */
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    z-index: 100000;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    border: 1px solid #7B189F;
-    bottom: 21px;
-    right: 30px;
-}
-#gToTop{
-    width: 45px;
-    height: 45px;
-    position: fixed;
-    /* background-color: #7B189F; */
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    border: 1px solid #7B189F;
-    bottom: 75px;
-    right: 30px;
-    transition: right 0.1s ease-in-out;
-}
-#StillnavBar{
+    /* justify-content: center;   */
+  }
+  #StillnavBar2 {
     /* Initially hidden above the viewport */
     top: -70px;
     left: 0;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     transition: top 0.1s ease-in-out; /* Smooth transition effect */
     /* Ensure it's above other content */
-    z-index: 1000; 
+    z-index: 100000;
+  }
+  .logo {
+    /* width: 150px; */
+    width: 20%;
+  }
+  .ProfCart .dispNone {
+    display: none;
+  }
+  .ProfCart {
+    width: 14%;
+    gap: 12px;
+  }
+  .searchCont {
+    width: 90%;
+  }
+  .column {
+    width: 100%;
+  }
+  .popup-menu-SignIn {
+    /* float: right; */
+    top: 13%;
+    /* width: 98%; */
+    right: 6%;
+    /* bottom: 44%; */
+    margin:auto;
+    padding: 20px;
+    position: absolute;
+    flex-wrap: nowrap;
+    gap: 30px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    gap: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    /* overflow: hidden; */
+    display: none;
+    z-index: 10000;
+  }
 }
-.column {
-        float: left;
-        width: 20%; /* Five columns */
-    }
-
-    @media only screen and (max-width: 600px) {
-        /* On small screens, show one column */
-        .column {
-            width: 100%;
-        }
-    }
-/* mediaQuesries */
-
-  @media screen and (min-width: 1154px) and (max-width: 1362px){
-    .navBarComps > ul span{
-        color: black;
-        font-size: 13px;
-        text-decoration: none;
-        
-    }
-  }
-  
-  @media screen and (min-width: 1016px) and (max-width: 1154px){
-    .navBarComps > ul span{
-        color: black;
-        font-size: 11px;
-        text-decoration: none;
-    }
-    .ProfCart > button span{
-        display: none;
-    } 
-  }
-  
-  @media screen and (min-width: 800px ) and (max-width: 1016px){
-    .navBarComps{
-        width: 100%;
-        border: 1px solid lightgray;
-        display: block;
-        flex-wrap: wrap;
-    }
-    .navBarComps > ul {
-        padding-right: 20px;
-        padding-left: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        list-style: none;
-    }
-    
-    .navBarComps > ul span{
-        color: black;
-        font-size: 10px;
-        text-decoration: none;
-    }
-    .ProfCart > button span{
-        display: none;  
-    } 
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 800px){
-    
-    .navBarComps{
-        display: none;
-    }
-    
-    .rightNavData{
-        display: none;
-    }
-    .topBarComponants{
-        width: 90vw;
-        padding: 7px;
-        display: flex;
-        align-items: center;
-        align-content: center;
-    } 
-    .spaceBet{
-        justify-content: center;
-    } 
-    
-    .topNavSection:nth-child(2){
-        display: none;
-    }
-    .topNavSection2{
-        /* display: block; */
-        width: 100%; 
-        display: flex;
-        align-items: center;
-        /* justify-content: center;   */
-    }
-    #StillnavBar2{
-        /* Initially hidden above the viewport */
-        top: -70px;
-        left: 0;
-        width: 100%;
-        background-color: #FFFFFF;
-        transition: top 0.1s ease-in-out; /* Smooth transition effect */
-        /* Ensure it's above other content */
-        z-index: 1000; 
-    }
-    .logo{
-        /* width: 150px; */
-        width: 20%;
-    }
-    .ProfCart .dispNone{
-        display: none;  
-    } 
-    .ProfCart{
-        width: 14%;
-        gap: 12px;
-    }
-    .searchCont{
-        width: 90%;
-    }
-    
-  }
