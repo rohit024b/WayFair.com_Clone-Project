@@ -255,7 +255,8 @@ button:hover .proftxt {
   align-items: center;
   align-content: center;
   justify-content: center;
-  border-bottom: 1px solid black;
+  background-color: #ffffff;
+  border-bottom: 1px solid lightgray;
   overflow: hidden;
   z-index: 1000;
   display: none;
@@ -429,6 +430,110 @@ button:hover .proftxt {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
+.imggrids {
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  gap : 20px;
+}
+.flexCol{
+  display: flex;
+  flex-direction: column;
+}
+
+.lgtimgsSlider {
+  width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  position: relative;
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.lgtimgsSlider .img1 {
+  width: 100%; /* Set both images to take up the full width of the container */
+  object-fit: cover;
+}
+.rghtImgs {
+  width: 70%;
+  margin: 0;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+.rghtImgs > img{
+  margin: 0;
+  padding: 8px;
+  border-radius: 15px;
+  width: 100%; /* Set both images to take up the full width of the container */
+  object-fit: cover;
+}
+.rghtImgs>img:hover{
+  background-color: #fffdf8;
+  border: 1px solid black;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.imggrids2{
+  width: 100%;
+  display: block;
+  margin: 0;
+  border-radius: 8px;
+  position: relative;
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.imggrids2 #img3{
+  padding: 5px;
+  width: 98%;
+  border-radius: 10px;
+}
+.imggrids2 #img3:hover{
+  background-color: #fffdf8;
+  border: 1px solid black;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.smallGrid{
+  margin: 10px;
+  /* width: 100%; */
+  display: block;
+  margin: auto;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgba(218, 214, 214, 0.55);
+  position: relative;
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.smallGrid  > img{
+  width: 100%;
+  border-radius: 24px;
+}
+.btmData{
+  width: 100%;
+  display: flex;
+  padding-top: 15px;
+  justify-content: space-between;
+}
 
 /* mediaQuesries */
 
@@ -504,9 +609,7 @@ button:hover .proftxt {
     align-items: center;
     align-content: center;
   }
-  .spaceBet {
-    justify-content: center;
-  }
+  
 
   .topNavSection:nth-child(2) {
     display: none;
@@ -551,7 +654,7 @@ button:hover .proftxt {
     /* width: 98%; */
     right: 6%;
     /* bottom: 44%; */
-    margin:auto;
+    margin: auto;
     padding: 20px;
     position: absolute;
     flex-wrap: nowrap;

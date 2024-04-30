@@ -239,3 +239,11 @@ signInBtns.forEach(btn => {
 // Add event listeners to the popup menu
 popupMenuSignIn.addEventListener('mouseover', showPopupMenu);
 popupMenuSignIn.addEventListener('mouseout', hidePopupMenu);
+
+
+const video = document.getElementById('videoPlayer');
+
+// Add event listener to play the video when mouse enters
+video.addEventListener('mouseenter', () => {
+    video.play();
+});
