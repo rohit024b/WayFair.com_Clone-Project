@@ -9,6 +9,7 @@
     <link rel="icon" href="https://assets.wfcdn.com/st4/stores/common/wayfair/favicon.ico" type="image/x-icon">
     <link rel="icon" sizes="192x192" href="https://assets.wfcdn.com/st4/stores/common/mobile/touch_icons/wayfair_192x192.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <style>
     ::-webkit-scrollbar{width:7px}
@@ -57,14 +58,16 @@
                     </div>
                     <div class="ProfCart marAuto spaceBet" >
                         <!-- <div  class="profile"> -->
-                            <button class="signInBn" style="border: none; background-color: transparent; width: 100%;
-                            height: 100%; cursor: pointer;">
-                            <div>
-                                <div class="icons"><i class='proficon bx bx-user-circle' style="font-size: 28px;"></i>
+                            <a href="./my-profile.html">
+                                <button class="signInBn" style="border: none; background-color: transparent; width: 100%;
+                                height: 100%; cursor: pointer;">
+                                <div>
+                                    <div class="icons"><i class='proficon bx bx-user-circle' style="font-size: 28px;"></i>
+                                    </div>
                                 </div>
-                            </div>
-                                <span class="proftxt marAuto" style="font-size: 18px; white-space: nowrap;">Sign In</span>
-                            </button>
+                                    <span class="proftxt marAuto" style="font-size: 18px; white-space: nowrap;">Sign In</span>
+                                </button>
+                            </a>
                         <!-- </div> -->
                         <button style="border: none; background-color:
                         transparent;display: flex; width: 100%;
@@ -78,11 +81,11 @@
                     </div>
                 </div>
                 <div class="popup-menu-SignIn" id="popupmenuSignIn">
-                    <div id="topOfpopUp">
+                    <div href="./my-profile.html" id="topOfpopUp">
                         <div id="signInInPopUp">
-                            <a id="signIntxtInPopup" href="#">Sign In</a>
+                            <a id="signIntxtInPopup" href="./my-profile.html">Sign In</a>
                         </div>
-                        <a href="#">Create an Account</a>
+                        <a href="./my-profile.html">Create an Account</a>
                     </div>
                     <div id="listUnderPopup">
                         <ul>
@@ -106,7 +109,6 @@
                         <ul>
                             <li><a id="dta1" href="#"><i id="dta" class='bx bx-cube bx-rotate-180' ></i><span id="dta2">3D Rooms Planner</span></a></li>
                         </ul>
-                        <hr style="height: 1px; color: black; "/>
                         <ul>
                             <li><a id="dta1" href="#"><i id="dta" class='bx bx-gift' ></i><span id="dta2">Gift Card</span></a></li>
                         </ul>
@@ -140,8 +142,8 @@
                             </div>
                         </div>
                         <div class="ProfCart marAuto" >
-                                <button class="signInBn" style="border: none; background-color: transparent; width: 100%; gap: 10px; height: 100%; cursor: pointer;">
-                                <span class="marAuto" style="font-size: 14px; white-space: nowrap; ">Sign In</span>
+                                <button href="./my-profile.html" class="signInBn" style="border: none; background-color: transparent; width: 100%; gap: 10px; height: 100%; cursor: pointer;">
+                                <span href="./my-profile.html" class="marAuto" style="font-size: 14px; white-space: nowrap; "><a href="./my-profile.html">Sign In</a></span>
                                 <div>
                                     <div class="icons"><i class='bx bx-user-circle' style="font-size: 23px;"></i>
                                     </div>
@@ -225,7 +227,7 @@
 </div>
 </div>
 
-<div class="topNavSection"> <!--parent-->
+<div class="topNavSection"> <!--parent--> 
     <div class="topBarComponants flexCol">
         <div class="imggrids">
             <div class="container lgtimgsSlider">
@@ -238,7 +240,7 @@
             </div>
         </div>
         <div class="imggrids2">
-            <div style="top: 0;left: 0; margin: 0;">
+            <div style="width: 98%; top: 0;left: 0; margin: 0;">
                 <div class="smallGrid">
                     <img src="https://assets.wfcdn.com/im/97160020/resize-h800-w800%5Ecompr-r85/2377/237716889/Modern+Abstract+Wall+Decor.jpg" alt="">
                     <img src="https://assets.wfcdn.com/im/19461833/resize-h800-w800%5Ecompr-r85/1059/105907857/Wynton+Comforter+Set.jpg" alt="">
@@ -257,6 +259,188 @@
         </div>
     </div>
 </div>
+
+<!-- //type1 of slider cards -->
+<div class="sliderCards topNavSection mergin-Bottom">
+    <div class="cardsGridContainer">
+        <div id="headForDisplays">
+            <h2>
+                Keep Shopping For Bedding Sets
+            </h2>
+        </div>
+        <button id="prev-btn" class="slide-button slide-button-css material-symbols-outlined">
+            chevron_left
+        </button>
+        <div class="cardsGrids" id="cardsGrid">
+            <!-- //grid for cards -->
+        </div>
+        <button id="next-btn" class="slide-button slide-button-css material-symbols-outlined">
+            chevron_right
+        </button>
+    </div>
+</div>
+
+<div class="topNavSection">
+    <div class="topBarComponants margin-bottom">
+        <img id="SaleFlag" style="" src="https://assets.wfcdn.com/im/25885680/resize-h200-w3200%5Ecompr-r85/2780/278090783/may_4-6._way_day_is_coming_soon._fill_your_cart._278090783.jpg" alt="">
+    </div>
+</div>
+
+<div class="sliderCards topNavSection mergin-Bottom">
+    <div class="cardsGridContainer">
+        <div id="headForDisplays">
+            <h2>
+                Can't wait for Way Day? Shop deals of the day now
+            </h2>
+        </div>
+        <button id="prev-btn" class="slide-button2 slide-button-css material-symbols-outlined">
+            chevron_left
+        </button>
+        <div class="cardsGrids" id="cardsGrid2">
+            <!-- //grid for cards -->
+        </div>
+        <button id="next-btn" class="slide-button2 slide-button-css material-symbols-outlined">
+            chevron_right
+        </button>
+    </div>
+</div>
+
+<div class="topNavSection">
+    <div class="topBarComponants margin-bottom">
+        <img id="SaleFlag" style="" src="https://assets.wfcdn.com/im/63322235/resize-h655-w2880%5Ecompr-r85/2723/272370324/turn_up_the_outdoor_fun._shop_spring_must-haves.__272370324.jpg" alt="">
+    </div>
+</div>
+<!-- type2-cardGrid - below -->
+<div class="sliderCards topNavSection mergin-Bottom">
+    <div class="cardsGridContainer">
+        <div id="headForDisplays">
+            <h2>
+                All the outdoor finds – for less
+            </h2>
+        </div>
+        <div class="type2-cardGrid" id="cardsGrid3">
+            <!-- //grid for cards -->
+        </div>
+
+    </div>
+</div>
+
+<div class="sliderCards topNavSection mergin-Bottom">
+    <div class="cardsGridContainer">
+        <div id="headForDisplays">
+            <h2>
+                All things outdoor
+            </h2>
+        </div>
+        <button id="prev-btn" class="slide-button3 slide-button-css material-symbols-outlined">
+            chevron_left
+        </button>
+        <div class="cardsGrids" id="cardsGrid4">
+            <!-- //grid for cards -->
+        </div>
+        <button id="next-btn" class="slide-button3 slide-button-css material-symbols-outlined">
+            chevron_right
+        </button>
+    </div>
+</div>
+
+<div class="topNavSection">
+    <div class="topBarComponants margin-bottom">
+        <img id="SaleFlag" style="" src="https://assets.wfcdn.com/im/93871905/resize-h655-w2880%5Ecompr-r85/2769/276902758/custom_cabinetry_for_every_kitchen._shop_now.__276902758.jpg" alt="">
+    </div>
+</div>
+
+<div class="sliderCards topNavSection mergin-Bottom">
+    <div class="cardsGridContainer">
+        <div id="headForDisplays">
+            <h2>
+                Home improvement done your way
+            </h2>
+        </div>
+        <div class="type2-cardGrid" id="cardsGrid5">
+            <!-- //grid for cards -->
+        </div>
+
+    </div>
+</div>
+
+<div class="topNavSection">
+    <div class="topBarComponants margin-bottom">
+        <img id="SaleFlag" style="" src="https://assets.wfcdn.com/im/43171859/resize-h655-w2880%5Ecompr-r85/2760/276084229/get_after_those_chef_goals._shop_kitchen_essentials_276084229.jpg" alt="">
+    </div>
+</div>
+
+<div class="sliderCards topNavSection mergin-Bottom">
+    <div class="cardsGridContainer">
+        <div id="headForDisplays">
+            <h2>
+                Outdoor kitchen goals = made
+            </h2>
+            <p style="margin-top: 20px;">
+                Your guide to alfresco entertaining.
+            </p>
+        </div>
+        <div class="type2-cardGrid" id="cardsGrid6">
+            <!-- //grid for cards -->
+        </div>
+
+    </div>
+</div>
+
+<div class="topNavSection">
+    <div class="topBarComponants margin-bottom">
+        <img id="SaleFlag" style="" src="https://assets.wfcdn.com/im/11803224/resize-h655-w2880%5Ecompr-r85/2729/272990837/feel-good_finishing_touches._decor_%26_more.__272990837.jpg" alt="">
+    </div>
+</div>
+
+<div class="sliderCards topNavSection mergin-Bottom">
+    <div class="cardsGridContainer">
+        <div id="headForDisplays">
+            <h2>
+                Trending now: comforting curves
+            </h2>
+        </div>
+        <button id="prev-btn" class="slide-button4 slide-button-css material-symbols-outlined">
+            chevron_left
+        </button>
+        <div class="cardsGrids" id="cardsGrid7">
+            <!-- //grid for cards -->
+        </div>
+        <button id="next-btn" class="slide-button4 slide-button-css material-symbols-outlined">
+            chevron_right
+        </button>
+    </div>
+</div>
+
+<div class="topNavSection">
+    <div class="topBarComponants margin-bottom">
+        <img id="SaleFlag" style="" src="https://assets.wfcdn.com/im/34576127/resize-h655-w2880%5Ecompr-r85/2723/272374960/today%27s_agenda%3F_total_relaxation._shop_bed_%26_bath.__272374960.jpg" alt="">
+    </div>
+</div>
+
+<!-- type3-cardGrid - below -->
+<!-- thse are with sliderButton which will get activated for responsiveness -->
+<div class="sliderCards topNavSection mergin-Bottom">
+    <div class="cardsGridContainer">
+        <div id="headForDisplays">
+            <h2>
+                Shop by department
+            </h2>
+        </div>
+        <button id="prev-btn" class="slide-button5 slide-button-css material-symbols-outlined">
+            chevron_left
+        </button>
+        <div class="type3-cardGrid" id="cardsGrid8">
+            <!-- //grid for cards -->
+        </div>
+        <button id="next-btn" class="slide-button5 slide-button-css material-symbols-outlined">
+            chevron_right
+        </button>
+    </div>
+</div>
+
+<hr style="height: 1px; background-color: lightgray; margin-top: 50px;">
+<!-- *************************************************** -->
 
 <div style="width: 100%; height: 100vh; background-color: #fff;"></div>
 <div style="width: 100%; height: 100vh; background-color: #ffF;"></div>

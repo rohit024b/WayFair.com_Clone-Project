@@ -138,7 +138,7 @@ a {
   justify-content: center;
   gap: 17px;
 }
-.ProfCart > button {
+.ProfCart >a ,button {
   display: flex;
   align-items: center;
   align-content: center;
@@ -432,7 +432,7 @@ button:hover .proftxt {
 }
 .imggrids {
   margin: auto;
-  margin-top: 10px;
+  margin-top: 0px;
   position: relative;
   display: flex;
   align-items: center;
@@ -486,7 +486,8 @@ button:hover .proftxt {
 .imggrids2{
   width: 100%;
   display: block;
-  margin: 0;
+  margin: auto;
+  padding: 10px;
   border-radius: 8px;
   position: relative;
   font-size: 0;
@@ -494,15 +495,14 @@ button:hover .proftxt {
   scrollbar-width: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
+  gap: 28px;
 }
 
-.imggrids2 #img3{
-  padding: 5px;
-  width: 98%;
+#img3{
+  width: 100%;
   border-radius: 10px;
 }
-.imggrids2 #img3:hover{
+#img3:hover{
   background-color: #fffdf8;
   border: 1px solid black;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -527,6 +527,13 @@ button:hover .proftxt {
 .smallGrid  > img{
   width: 100%;
   border-radius: 24px;
+  padding: 5px;
+}
+.smallGrid > img:hover{
+  background-color: #fffdf8;
+  border: 1px solid black;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .btmData{
   width: 100%;
@@ -535,6 +542,153 @@ button:hover .proftxt {
   justify-content: space-between;
 }
 
+.mergin-Bottom{
+  margin-bottom: 20px;
+}
+
+/* 10 image slide css */
+.cardsGridContainer{
+  width: 90vw;
+  margin-top: 20px;
+  position: relative;
+  /* margin: auto; */
+  padding: 7px;
+  /* display: flex; */
+}
+.cardsGridContainer > .slide-button5{
+  display: none;
+}
+#headForDisplays > h2 {
+  font-size: 24px;
+}
+.cardsGrids{
+  width: 100%;
+  margin-top: 10px;
+  /* display: block; */
+  /* margin: auto; */
+  /* border-radius: 8px; */
+  position: relative;
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  display: grid;
+  grid-template-columns: repeat(10, minmax(268px, 1fr));
+  gap: 10px;
+}
+.type2-cardGrid{
+  width: 100%;
+  margin-top: 10px;
+  /* display: block; */
+  /* margin: auto; */
+  /* border-radius: 8px; */
+  position: relative;
+  font-size: 0;
+  /* overflow-x: auto;
+  scrollbar-width: none; */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 10px;
+}
+.type3-cardGrid{
+  width: 100%;
+  margin-top: 10px;
+  /* display: block; */
+  /* margin: auto; */
+  /* border-radius: 8px; */
+  position: relative; 
+  font-size: 0;
+  /* overflow-x: auto;
+  scrollbar-width: none; */
+  display: grid;
+  grid-template-columns: repeat(7, minmax(180px, 1fr));
+  gap: 15px;
+}
+.card-container {
+  position: relative;
+  padding: 5px;
+  border-radius: 8px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center; */
+  overflow: hidden;
+}
+.card-container:hover{
+  background-color: #fffdf8;
+  border: 1px solid black;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.product-details {
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+}
+.product-details > h4{
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: rgba(139, 0, 0, 0.758);
+}
+#data {
+  width: 100%;
+  text-align: left;
+}
+#imgDiv{
+  border: 0.2px solid rgba(173, 216, 230, 0.4);
+  border-radius: 8px;
+}
+#slideimg {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+  object-fit: cover;
+}
+
+.slide-button-css {
+  width: 50px;
+  height: 50px;
+  /* top: 145%; */
+  border: 1px solid #7b189f;
+  position: absolute;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1000; /* Ensure buttons appear above other content */
+  /* transform: translateY(-50%); */
+}
+
+#prev-btn {
+  left: -12px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+#next-btn {
+  right: -12px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+#SaleFlag{
+  width: 98%; 
+  object-fit: cover; 
+  /* margin: 15px; */
+  padding: 10px;
+  border-radius: 15px;
+}
+#SaleFlag:hover{
+  background-color: #fffdf8;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/* ********************************************************** */
 /* mediaQuesries */
 
 @media screen and (min-width: 1154px) and (max-width: 1360px) {
@@ -542,6 +696,37 @@ button:hover .proftxt {
     color: black;
     font-size: 13px;
     text-decoration: none;
+  }
+  .type2-cardGrid{
+    width: 100%;
+    margin-top: 10px;
+    /* display: block; */
+    /* margin: auto; */
+    /* border-radius: 8px; */
+    position: relative;
+    font-size: 0;
+    /* overflow-x: auto;
+    scrollbar-width: none; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 10px;
+  }
+  .type3-cardGrid{
+    width: 100%;
+    margin-top: 10px;
+    /* display: block; */
+    /* margin: auto; */
+    /* border-radius: 8px; */
+    position: relative; 
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: repeat(14, minmax(180px, 1fr));
+    gap: 15px;
+  }
+  .cardsGridContainer > .slide-button5{
+    display: block;
   }
 }
 @media screen and (min-width: 1145px) and (max-width: 1154px) {
@@ -553,6 +738,37 @@ button:hover .proftxt {
   .ProfCart > button span {
     display: none;
   }
+  .type2-cardGrid{
+    width: 100%;
+    margin-top: 10px;
+    /* display: block; */
+    /* margin: auto; */
+    /* border-radius: 8px; */
+    position: relative;
+    font-size: 0;
+    /* overflow-x: auto;
+    scrollbar-width: none; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 10px;
+  }
+  .type3-cardGrid{
+    width: 100%;
+    margin-top: 10px;
+    /* display: block; */
+    /* margin: auto; */
+    /* border-radius: 8px; */
+    position: relative; 
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: repeat(14, minmax(180px, 1fr));
+    gap: 15px;
+  }
+  .cardsGridContainer > .slide-button5{
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1016px) and (max-width: 1145px) {
@@ -563,6 +779,37 @@ button:hover .proftxt {
   }
   .ProfCart > button span {
     display: none;
+  }
+  .type2-cardGrid{
+    width: 100%;
+    margin-top: 10px;
+    /* display: block; */
+    /* margin: auto; */
+    /* border-radius: 8px; */
+    position: relative;
+    font-size: 0;
+    /* overflow-x: auto;
+    scrollbar-width: none; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 10px;
+  }
+  .type3-cardGrid{
+    width: 100%;
+    margin-top: 10px;
+    /* display: block; */
+    /* margin: auto; */
+    /* border-radius: 8px; */
+    position: relative; 
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: repeat(14, minmax(180px, 1fr));
+    gap: 15px;
+  }
+  .cardsGridContainer > .slide-button5{
+    display: block;
   }
 }
 
@@ -592,6 +839,37 @@ button:hover .proftxt {
   .ProfCart > button span {
     display: none;
   }
+  .type2-cardGrid{
+    width: 100%;
+    margin-top: 10px;
+    /* display: block; */
+    /* margin: auto; */
+    /* border-radius: 8px; */
+    position: relative;
+    font-size: 0;
+    /* overflow-x: auto;
+    scrollbar-width: none; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 10px;
+  }
+  .type3-cardGrid{
+    width: 100%;
+    margin-top: 10px;
+    /* display: block; */
+    /* margin: auto; */
+    /* border-radius: 8px; */
+    position: relative; 
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: repeat(14, minmax(180px, 1fr));
+    gap: 15px;
+  }
+  .cardsGridContainer > .slide-button5{
+    display: block;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 800px) {
@@ -609,8 +887,6 @@ button:hover .proftxt {
     align-items: center;
     align-content: center;
   }
-  
-
   .topNavSection:nth-child(2) {
     display: none;
   }
@@ -671,5 +947,36 @@ button:hover .proftxt {
     /* overflow: hidden; */
     display: none;
     z-index: 10000;
+  }
+  .type2-cardGrid{
+    width: 100%;
+    margin-top: 10px;
+    /* display: block; */
+    /* margin: auto; */
+    /* border-radius: 8px; */
+    position: relative;
+    font-size: 0;
+    /* overflow-x: auto;
+    scrollbar-width: none; */
+    display: grid;
+    grid-template-columns: repeat(1, minmax(290px, 1fr));
+    gap: 10px;
+  }
+  .type3-cardGrid{
+    width: 100%;
+    margin-top: 10px;
+    /* display: block; */
+    /* margin: auto; */
+    /* border-radius: 8px; */
+    position: relative; 
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: repeat(14, minmax(180px, 1fr));
+    gap: 15px;
+  }
+  .cardsGridContainer > .slide-button5{
+    display: none;
   }
 }
