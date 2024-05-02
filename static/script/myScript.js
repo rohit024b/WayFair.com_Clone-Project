@@ -198,7 +198,7 @@ function generateCategoryList(categories) {
 
     dropdownContent.appendChild(column);
     dropdownContent.appendChild(imgDivInPopup);
-  }
+  } 
 }
 
 // Call the function to generate the category list

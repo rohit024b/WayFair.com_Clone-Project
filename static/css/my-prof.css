@@ -9,3 +9,153 @@
     border: none;
     scroll-behavior: smooth;
   }
+
+  .marAuto {
+    margin: 0px;
+  }
+
+  .sign-in-page-container {
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  .Footer-Container{
+    top: 0;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    background-color: rgba(211, 211, 211, 0.272);
+  }
+  .footer-Data{
+    width: 100%;
+  }
+  .signin-Form{
+    margin: 0;
+  }
+  #footer p{
+    text-decoration: underline;
+  }
+  #footer p:hover{
+      text-decoration: none;
+  }
+
+  .innerComponants {
+    width: 73vw;
+    height: 100%;
+    margin: auto;
+    top: 0;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .innerComponants-footer{
+    width: 73vw;
+    height: 100%;
+    margin: auto;
+    top: 0;
+    padding: 7px;
+    display: flex;
+  }
+  #footer{
+    width: 100%;
+    margin: 0;
+    display: flex;
+
+  }
+  .logo {
+    width: 16%;
+  }
+
+  .marAuto {
+    margin: 0px;
+  }
+
+  .headContaioner{
+    width: 100%;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+  }
+.signIn-instruction{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+}
+.signIn-instruction h1{
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+}
+  .searchCont {
+    width: 90%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .btnAndInputBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #topOfpopUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    padding-bottom: 15px;
+  }
+  #signInInPopUp {
+    width: 100%;
+    height: 50px;
+    background-color: #7b189f;
+    border-radius: 50px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  #signInInPopUp:hover {
+    background-color: #9840b8;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
+  }
+  #signInInPopUp > #signIntxtInPopup {
+    text-align: center;
+  }
+  #signInInPopUp  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #signInInPopUp + a:hover {
+    color: #7b189f;
+    text-decoration: none;
+  }
