@@ -204,19 +204,6 @@ function generateCategoryList(categories) {
 // Call the function to generate the category list
 generateCategoryList(categories);
 
-
-// popup-menu-for SignIn btn 
-
-// const signInBn = document.getElementById('signInBn');
-// const popupMenuSignIn = document.getElementById('popupmenuSignIn');
-
-// signInBn.addEventListener('mouseover',function(){
-//     popupMenuSignIn.style.display= 'block'
-// })
-// signInBn.addEventListener('mouseleave',function(){
-//     popupMenuSignIn.style.display= 'none'
-// })
-
 const popupMenuSignIn = document.getElementById('popupmenuSignIn');
 const signInBtns = document.querySelectorAll('.signInBn'); // Use plural for clarity
 
@@ -711,7 +698,6 @@ function slideGrid(listOfData, gridcontainer) {
     cardContainer.appendChild(productDetails);
 
     gridcontainer.appendChild(cardContainer);
-    // cardsGrid.appendChild(cardContainer);
   });
 
 }
@@ -734,7 +720,6 @@ function scrollForSliderBtn(cont, btnClass) {
       button.addEventListener('click', () => {
         const direction = button.id === "prev-btn" ? -1 : 1;
         const scrollAmout = cont.clientWidth * direction;
-        // console.log(scrollAmout);
         cont.scrollBy({ left: scrollAmout, behavior: "smooth" });
       })
     })
@@ -868,75 +853,75 @@ slideGrid2(outDoorKitchen, cardsGridtyp3)
 
 //type3 cards gird
 const departments = [
-  { 
+  {
     id: 1,
-    department: "Sale", 
-    image: "https://assets.wfcdn.com/im/05986081/timg-h241-w241%5Ecompr-r85/8535/85357250/default_name.jpg" 
+    department: "Sale",
+    image: "https://assets.wfcdn.com/im/05986081/timg-h241-w241%5Ecompr-r85/8535/85357250/default_name.jpg"
   },
-  { 
+  {
     id: 2,
-    department: "Furniture", 
-    image: "https://assets.wfcdn.com/im/20374007/timg-h241-w241%5Ecompr-r85/9847/98477101/default_name.jpg" 
+    department: "Furniture",
+    image: "https://assets.wfcdn.com/im/20374007/timg-h241-w241%5Ecompr-r85/9847/98477101/default_name.jpg"
   },
-  { 
+  {
     id: 3,
-    department: "Outdoor", 
-    image: "https://assets.wfcdn.com/im/78973905/timg-h241-w241%5Ecompr-r85/9847/98477118/default_name.jpg" 
+    department: "Outdoor",
+    image: "https://assets.wfcdn.com/im/78973905/timg-h241-w241%5Ecompr-r85/9847/98477118/default_name.jpg"
   },
-  { 
+  {
     id: 4,
-    department: "Bedding & Bath", 
-    image: "https://assets.wfcdn.com/im/11352763/timg-h241-w241%5Ecompr-r85/1323/132350539/default_name.jpg" 
+    department: "Bedding & Bath",
+    image: "https://assets.wfcdn.com/im/11352763/timg-h241-w241%5Ecompr-r85/1323/132350539/default_name.jpg"
   },
-  { 
+  {
     id: 5,
-    department: "Decor & Pillows", 
-    image: "https://assets.wfcdn.com/im/82372253/timg-h241-w241%5Ecompr-r85/9847/98477095/default_name.jpg" 
+    department: "Decor & Pillows",
+    image: "https://assets.wfcdn.com/im/82372253/timg-h241-w241%5Ecompr-r85/9847/98477095/default_name.jpg"
   },
-  { 
+  {
     id: 6,
-    department: "Rugs", 
-    image: "https://assets.wfcdn.com/im/1519289/timg-h241-w241%5Ecompr-r85/9847/98477121/default_name.jpg" 
+    department: "Rugs",
+    image: "https://assets.wfcdn.com/im/1519289/timg-h241-w241%5Ecompr-r85/9847/98477121/default_name.jpg"
   },
-  { 
+  {
     id: 7,
     department: "Lighting",
-    image: "https://assets.wfcdn.com/im/13026644/timg-h241-w241%5Ecompr-r85/9847/98477115/default_name.jpg" 
+    image: "https://assets.wfcdn.com/im/13026644/timg-h241-w241%5Ecompr-r85/9847/98477115/default_name.jpg"
   },
-  { 
+  {
     id: 8,
-    department: "Home Improvement", 
-    image: "https://assets.wfcdn.com/im/59082384/timg-h241-w241%5Ecompr-r85/9847/98477108/default_name.jpg" 
+    department: "Home Improvement",
+    image: "https://assets.wfcdn.com/im/59082384/timg-h241-w241%5Ecompr-r85/9847/98477108/default_name.jpg"
   },
-  { 
+  {
     id: 9,
-    department: "Appliances", 
-    image: "https://assets.wfcdn.com/im/78368703/timg-h241-w241%5Ecompr-r85/9847/98477082/default_name.jpg" 
+    department: "Appliances",
+    image: "https://assets.wfcdn.com/im/78368703/timg-h241-w241%5Ecompr-r85/9847/98477082/default_name.jpg"
   },
-  { 
+  {
     id: 10,
-    department: "Kitchen", 
-    image: "https://assets.wfcdn.com/im/30854194/timg-h241-w241%5Ecompr-r85/2692/269209725/default_name.jpg" 
+    department: "Kitchen",
+    image: "https://assets.wfcdn.com/im/30854194/timg-h241-w241%5Ecompr-r85/2692/269209725/default_name.jpg"
   },
-  { 
+  {
     id: 11,
-    department: "Baby & Kids", 
-    image: "https://assets.wfcdn.com/im/44333123/timg-h241-w241%5Ecompr-r85/9847/98477084/default_name.jpg" 
+    department: "Baby & Kids",
+    image: "https://assets.wfcdn.com/im/44333123/timg-h241-w241%5Ecompr-r85/9847/98477084/default_name.jpg"
   },
-  { 
+  {
     id: 12,
-    department: "Organization", 
-    image: "https://assets.wfcdn.com/im/32533450/timg-h241-w241%5Ecompr-r85/9847/98477124/default_name.jpg" 
+    department: "Organization",
+    image: "https://assets.wfcdn.com/im/32533450/timg-h241-w241%5Ecompr-r85/9847/98477124/default_name.jpg"
   },
-  { 
+  {
     id: 13,
-    department: "Custom Cabinetry", 
-    image: "https://assets.wfcdn.com/im/76680020/timg-h241-w241%5Ecompr-r85/2320/232096871/default_name.jpg" 
+    department: "Custom Cabinetry",
+    image: "https://assets.wfcdn.com/im/76680020/timg-h241-w241%5Ecompr-r85/2320/232096871/default_name.jpg"
   },
-  { 
+  {
     id: 14,
-    department: "Pet", 
-    image: "https://assets.wfcdn.com/im/96777493/timg-h241-w241%5Ecompr-r85/1321/132124505/default_name.jpg" 
+    department: "Pet",
+    image: "https://assets.wfcdn.com/im/96777493/timg-h241-w241%5Ecompr-r85/1321/132124505/default_name.jpg"
   }
 ];
 
@@ -961,7 +946,6 @@ function slideGrid3(listOfData, gridcontainer) {
     productDetails.style.display = 'flex'
     const productName = document.createElement('p');
     productName.textContent = product.department;
-    // productName.style.fontSize = '24px'
     productName.style.marginTop = '20px'
 
 

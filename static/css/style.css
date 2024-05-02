@@ -9,10 +9,6 @@
   border: none;
   scroll-behavior: smooth;
 }
-/* body { */
-/* max-width: 1200px; Adjust this value according to your design */
-/* margin: 0 auto; */
-/* } */
 .marAuto {
   margin: 0px;
 }
@@ -71,11 +67,9 @@ a {
 }
 .rightNavData li:hover {
   cursor: pointer;
-  /* color: #FFFFFF; */
   text-decoration: underline;
 }
 .logo {
-  /* width: 150px; */
   width: 12%;
 }
 .rightNavData > #topNavRight {
@@ -138,7 +132,12 @@ a {
   justify-content: center;
   gap: 17px;
 }
+.ProfCart >a{
+  margin: 0;
+  padding: 0;
+}
 .ProfCart >a ,button {
+  height: 100%;
   display: flex;
   align-items: center;
   align-content: center;
@@ -156,8 +155,6 @@ button:hover .proftxt {
   border: 1px solid lightgray;
 }
 .navBarComps {
-  /* margin: auto; */
-  /* width: 90vw; */
   padding: 7px;
   display: inline-block;
   align-items: center;
@@ -198,7 +195,6 @@ button:hover .proftxt {
   width: 45px;
   height: 45px;
   position: fixed;
-  /* background-color: #7B189F; */
   background-color: #ffffff;
   border-radius: 50%;
   z-index: 100000;
@@ -214,7 +210,6 @@ button:hover .proftxt {
   width: 45px;
   height: 45px;
   position: fixed;
-  /* background-color: #7B189F; */
   background-color: #ffffff;
   border-radius: 50%;
   z-index: 100000;
@@ -243,7 +238,6 @@ button:hover .proftxt {
 }
 #dropdown-content {
   float: top;
-  /* top: 18%; */
   width: 98%;
   margin: 0;
   padding: 0;
@@ -262,11 +256,7 @@ button:hover .proftxt {
   display: none;
 }
 .popup-menu-SignIn {
-  /* float: right; */
-  /* top: 13%; */
-  /* width: 98%; */
   right: 6%;
-  /* bottom: 44%; */
   margin: -13px;
   padding: 20px;
   position: absolute;
@@ -281,7 +271,6 @@ button:hover .proftxt {
   border: 1px solid black;
   gap: 10px;
   box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-  /* overflow: hidden; */
   display: none;
   z-index: 10000;
 }
@@ -307,6 +296,7 @@ button:hover .proftxt {
   padding-bottom: 15px;
   list-style: none;
 }
+
 #listUnderPopup li {
   display: flex;
   align-items: center;
@@ -352,6 +342,18 @@ button:hover .proftxt {
   align-content: center;
   justify-content: center;
 }
+.contact-help{
+  width: 150px;
+  height: 50px;
+  background-color: #7b189f;
+  border-radius: 50px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
 #signInInPopUp:hover {
   background-color: #9840b8;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
@@ -383,8 +385,6 @@ button:hover .proftxt {
   margin-bottom: 25px;
   list-style: none;
   font-size: 12px;
-  /* display: none; */
-  /* display: block; */
 }
 .column > h3 + ul > li {
   margin: 0;
@@ -401,7 +401,6 @@ button:hover .proftxt {
 .column > h3 + ul > li > a:hover {
   color: #7b189f;
   text-decoration: underline 1px;
-  /* text-underline-offset: 5px; */
 }
 #extra-content {
   float: left;
@@ -413,7 +412,6 @@ button:hover .proftxt {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid black; */
   gap: 15px;
 }
 #textimgCategory {
@@ -510,7 +508,6 @@ button:hover .proftxt {
 }
 .smallGrid{
   margin: 10px;
-  /* width: 100%; */
   display: block;
   margin: auto;
   padding: 15px;
@@ -551,9 +548,7 @@ button:hover .proftxt {
   width: 90vw;
   margin-top: 20px;
   position: relative;
-  /* margin: auto; */
   padding: 7px;
-  /* display: flex; */
 }
 .cardsGridContainer > .slide-button5{
   display: none;
@@ -564,9 +559,6 @@ button:hover .proftxt {
 .cardsGrids{
   width: 100%;
   margin-top: 10px;
-  /* display: block; */
-  /* margin: auto; */
-  /* border-radius: 8px; */
   position: relative;
   font-size: 0;
   overflow-x: auto;
@@ -578,13 +570,8 @@ button:hover .proftxt {
 .type2-cardGrid{
   width: 100%;
   margin-top: 10px;
-  /* display: block; */
-  /* margin: auto; */
-  /* border-radius: 8px; */
   position: relative;
   font-size: 0;
-  /* overflow-x: auto;
-  scrollbar-width: none; */
   display: grid;
   grid-template-columns: repeat(4, minmax(300px, 1fr));
   gap: 10px;
@@ -592,13 +579,8 @@ button:hover .proftxt {
 .type3-cardGrid{
   width: 100%;
   margin-top: 10px;
-  /* display: block; */
-  /* margin: auto; */
-  /* border-radius: 8px; */
   position: relative; 
   font-size: 0;
-  /* overflow-x: auto;
-  scrollbar-width: none; */
   display: grid;
   grid-template-columns: repeat(7, minmax(180px, 1fr));
   gap: 15px;
@@ -607,11 +589,6 @@ button:hover .proftxt {
   position: relative;
   padding: 5px;
   border-radius: 8px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center; */
   overflow: hidden;
 }
 .card-container:hover{
@@ -649,7 +626,6 @@ button:hover .proftxt {
 .slide-button-css {
   width: 50px;
   height: 50px;
-  /* top: 145%; */
   border: 1px solid #7b189f;
   position: absolute;
   background-color: white;
@@ -659,7 +635,6 @@ button:hover .proftxt {
   padding: 10px;
   border-radius: 50%;
   z-index: 1000; /* Ensure buttons appear above other content */
-  /* transform: translateY(-50%); */
 }
 
 #prev-btn {
@@ -676,7 +651,6 @@ button:hover .proftxt {
 #SaleFlag{
   width: 98%; 
   object-fit: cover; 
-  /* margin: 15px; */
   padding: 10px;
   border-radius: 15px;
 }
@@ -687,7 +661,123 @@ button:hover .proftxt {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
+.gridAboutUS{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.aboutus{
+  margin: auto;
+  width: 90vw;
+  padding: 7px;
+  gap: 20px;
+  top: 0;
+  margin: auto;
+  height: 90%;
+}
+#aboutUsList{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding-bottom: 15px;
+  list-style: none;
+}
+#aboutUsList ul {
+  margin: 0;
+  list-style: none;
+}
+#aboutUsList li {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding-top: 10px;  
+  padding-bottom: 10px;  
+}
 
+#aboutUsList ul:hover #dta2 {
+  text-decoration: underline 1.5px #7b189f;
+  text-underline-offset: 5px;
+  color: #7b189f;
+}
+
+#aboutUsList a {
+  margin: 0;
+}
+.btnsContact{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  gap: 15px;
+}
+#contact-help{
+  width: 150px;
+  height: 50px;
+  margin: 0;
+  
+  background-color: #7b189f;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#contact-help:hover {
+  background-color: #9840b8;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
+}
+#contact-help > #signIntxtInPopup {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  gap : 5px;
+}
+#contact-help + a {
+  color: #7b189f;
+  text-decoration: none;
+}
+#contact-help + a:hover {
+  color: #7b189f;
+  text-decoration: none;
+}
+.socialCont{
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.socials{
+  margin: auto;
+  width: 90vw;
+  padding: 7px;
+  display: flex;
+  gap: 20px;
+}
+.socials > i{
+  font-size: 22px;
+  
+}
+.socials > i:hover{
+  background-color: #9840b8;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
+}
+.socials > i,span,p{
+  margin: 0;
+}
+.socials > span,p{
+  font-size: smaller;
+}
+.socials > p:hover{
+  text-decoration: underline 0.5px #7b189f;
+  text-underline-offset: 5px;
+  color: #7b189f;
+}
+.socials > span:hover{
+  text-decoration: underline 0.5px #7b189f;
+  text-underline-offset: 5px;
+  color: #7b189f;
+}
 /* ********************************************************** */
 /* mediaQuesries */
 
@@ -700,13 +790,8 @@ button:hover .proftxt {
   .type2-cardGrid{
     width: 100%;
     margin-top: 10px;
-    /* display: block; */
-    /* margin: auto; */
-    /* border-radius: 8px; */
     position: relative;
     font-size: 0;
-    /* overflow-x: auto;
-    scrollbar-width: none; */
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 10px;
@@ -714,9 +799,6 @@ button:hover .proftxt {
   .type3-cardGrid{
     width: 100%;
     margin-top: 10px;
-    /* display: block; */
-    /* margin: auto; */
-    /* border-radius: 8px; */
     position: relative; 
     font-size: 0;
     overflow-x: auto;
@@ -741,13 +823,8 @@ button:hover .proftxt {
   .type2-cardGrid{
     width: 100%;
     margin-top: 10px;
-    /* display: block; */
-    /* margin: auto; */
-    /* border-radius: 8px; */
     position: relative;
     font-size: 0;
-    /* overflow-x: auto;
-    scrollbar-width: none; */
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 10px;
@@ -755,9 +832,6 @@ button:hover .proftxt {
   .type3-cardGrid{
     width: 100%;
     margin-top: 10px;
-    /* display: block; */
-    /* margin: auto; */
-    /* border-radius: 8px; */
     position: relative; 
     font-size: 0;
     overflow-x: auto;
@@ -783,13 +857,8 @@ button:hover .proftxt {
   .type2-cardGrid{
     width: 100%;
     margin-top: 10px;
-    /* display: block; */
-    /* margin: auto; */
-    /* border-radius: 8px; */
     position: relative;
     font-size: 0;
-    /* overflow-x: auto;
-    scrollbar-width: none; */
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 10px;
@@ -797,9 +866,6 @@ button:hover .proftxt {
   .type3-cardGrid{
     width: 100%;
     margin-top: 10px;
-    /* display: block; */
-    /* margin: auto; */
-    /* border-radius: 8px; */
     position: relative; 
     font-size: 0;
     overflow-x: auto;
@@ -842,13 +908,8 @@ button:hover .proftxt {
   .type2-cardGrid{
     width: 100%;
     margin-top: 10px;
-    /* display: block; */
-    /* margin: auto; */
-    /* border-radius: 8px; */
     position: relative;
     font-size: 0;
-    /* overflow-x: auto;
-    scrollbar-width: none; */
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 10px;
@@ -856,9 +917,6 @@ button:hover .proftxt {
   .type3-cardGrid{
     width: 100%;
     margin-top: 10px;
-    /* display: block; */
-    /* margin: auto; */
-    /* border-radius: 8px; */
     position: relative; 
     font-size: 0;
     overflow-x: auto;
@@ -887,15 +945,14 @@ button:hover .proftxt {
     align-items: center;
     align-content: center;
   }
+  
   .topNavSection:nth-child(2) {
     display: none;
   }
   .topNavSection2 {
-    /* display: block; */
     width: 100%;
     display: flex;
     align-items: center;
-    /* justify-content: center;   */
   }
   #StillnavBar2 {
     /* Initially hidden above the viewport */
@@ -908,7 +965,6 @@ button:hover .proftxt {
     z-index: 100000;
   }
   .logo {
-    /* width: 150px; */
     width: 20%;
   }
   .ProfCart .dispNone {
@@ -925,11 +981,8 @@ button:hover .proftxt {
     width: 100%;
   }
   .popup-menu-SignIn {
-    /* float: right; */
     top: 13%;
-    /* width: 98%; */
     right: 6%;
-    /* bottom: 44%; */
     margin: auto;
     padding: 20px;
     position: absolute;
@@ -944,20 +997,14 @@ button:hover .proftxt {
     border: 1px solid black;
     gap: 10px;
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-    /* overflow: hidden; */
     display: none;
     z-index: 10000;
   }
   .type2-cardGrid{
     width: 100%;
     margin-top: 10px;
-    /* display: block; */
-    /* margin: auto; */
-    /* border-radius: 8px; */
     position: relative;
     font-size: 0;
-    /* overflow-x: auto;
-    scrollbar-width: none; */
     display: grid;
     grid-template-columns: repeat(1, minmax(290px, 1fr));
     gap: 10px;
@@ -965,9 +1012,6 @@ button:hover .proftxt {
   .type3-cardGrid{
     width: 100%;
     margin-top: 10px;
-    /* display: block; */
-    /* margin: auto; */
-    /* border-radius: 8px; */
     position: relative; 
     font-size: 0;
     overflow-x: auto;
@@ -978,5 +1022,10 @@ button:hover .proftxt {
   }
   .cardsGridContainer > .slide-button5{
     display: none;
+  }
+  .gridAboutUS{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
 }
