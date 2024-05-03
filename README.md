@@ -19,7 +19,7 @@ This project is a clone of the website [Wayfair](https://www.wayfair.com/), whic
 
 ## Usage
 
-To view the project, simply open the `https://wayfair-by-rohitbhise-7c4f05.netlify.app/` in a web browser.
+To view the project, simply open this [Website-Link](https://wayfair-by-rohitbhise-7c4f05.netlify.app) in a web browser.
 
 ## Contributors
 
