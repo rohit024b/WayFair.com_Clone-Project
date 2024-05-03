@@ -960,3 +960,14 @@ function slideGrid3(listOfData, gridcontainer) {
 }
 // this is taking list of data 1st and then the ID of the html element(Parent element)
 slideGrid3(departments, cardsGridtyp4)
+
+// hamburger menu open/close functions
+let hamburgMenu = document.getElementById('hamburgCont');
+
+function openMenu(){
+  hamburgMenu.style.display = 'block';
+}
+
+function closeMenu (menu){
+  hamburgMenu.style.display = 'none';
+}
