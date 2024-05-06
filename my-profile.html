@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./static/css/my-prof.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="https://assets.wfcdn.com/st4/stores/common/wayfair/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/style.css">
   </head>
   <body>
     <div class="sign-in-page-container">
@@ -103,40 +104,144 @@
                 <p>Secure Login <i class='bx bx-lock-alt'></i></p>
             </div>
         </header>
-        <div class="signin-Form">
-            <div class="signIn-instruction">
+        <!-- email div below -->
+        <div  id="emalFormContainer" class="signin-Form">
+            <div id="logIncpnt" class="signIn-instruction">
                 <h1>
                     Enter your email address to sign in or to create an account
                 </h1>
+                <form  class="form" id="FormEmail">
+                  <div class="searchCont marAuto">
+                      <div class="btnAndInputBox">
+                              <input id="emailinput" style="margin: 0;" type="email" placeholder="Email Address" required>
+                      </div>
+                  </div>
+                  <div id="signInInPopUp">
+                    <button onclick="getEmailVal()" id="submitButton" style="background-color: transparent; color: aliceblue;" type="submit">
+                      <a>Continue</a>
+                    </button>
+                  </div>
+                </form>
+            </div>
+            <!-- email div above -->
+            
+            <!-- password div below -->
+            <div id="logIncpnt2" class="signIn-instruction">
+              <h1 style="white-space: nowrap;">
+                  Create a Password
+              </h1>
+              <h1 id="emailEnteredValue" style="font-size: 16px; color: black;">
+                
+              </h1>
+              <h1>
+                <a style="font-size: 16px; color: #7b189f; text-decoration: underline #7b189f;" href="">Use a Different email</a>
+              </h1>
+              <form  class="form" id="FormEmail2">
                 <div class="searchCont marAuto">
                     <div class="btnAndInputBox">
-                            <input style="margin: 0;" type="email" placeholder="Email Address">
+                      <!-- Hidden username field -->
+                      <input id="usernameInput" type="text" style="position: absolute; left: -9999px;" aria-hidden="true" autocomplete="new-UserName">
+                      <input id="passInput" style="margin: 0;" type="password" placeholder="Enter Minimum 6 Characters" autocomplete="new-password" required>
                     </div>
                 </div>
-                    <div id="signInInPopUp">
-                        <a id="" href="./my-profile.html">Continue</a>
-                    </div>
-            </div>
+                <div id="signInInPopUp">
+                  <button onclick="nextPage()" id="CreateAcc" style="background-color: transparent; color: aliceblue;" type="submit">
+                    <a id="ContinueButton">Create Account</a></button>
+                </div>
+              </form>
+              <h1 style="font-weight: 200;">
+                <p>By creating an account, you agree to our <a style="font-size: 16px; color: #7b189f; text-decoration: underline #7b189f;" href=""> privacy policy</a> and <a style="font-size: 16px; color: #7b189f; text-decoration: underline #7b189f;" href="">terms of use.</a></p>
+              </h1>
+              <h1>
+                <p>Have an account?<a style="font-size: 16px; color: #7b189f; text-decoration: underline #7b189f;" href=""> sign In</a></p>
+              </h1>
+          </div>
+
+
+          <!-- moble Num -->
+          <div id="logIncpnt3" class="signIn-instruction">
+            <h1 style="white-space: nowrap;">
+              Add a Mobile Phone Number
+            </h1>
+            <h1 id="emailEnteredValue" style="font-size: 16px; color: black; font-weight: 200;">
+              Easily recover and secure your account. We’ll text you a code to verify it’s you.
+            </h1>
+            <form  class="form" id="FormEmail3" >
+              <div class="searchCont marAuto">
+                  <div class="btnAndInputBox">
+                    <!-- Hidden username field -->
+                    <input id="usernameInput2" type="text" style="position: absolute; left: -9999px;" aria-hidden="true" autocomplete="new-UserName">
+                    <input id="numInput" style="margin: 0;" type="tel" placeholder="Enter 10-Digit Number" autocomplete="new-Number" required>
+                  </div>
+              </div>
+              <div id="signInInPopUp">
+                <button onclick="sendOTP()" id="sendCode" style="background-color: transparent; color: aliceblue;" type="submit">
+                  <a id="ContinueButton">Send Code</a></button>
+              </div>
+            </form>
+            <h1 style="font-weight: 200;">
+              <p>By entering your phone number, you agree to receive text messages with authentication codes. Message frequency varies. Message and data rates may apply. Text HELP for Help & STOP to Cancel. <a style="font-size: 16px; color: #7b189f; text-decoration: underline #7b189f;" href=""> Privacy policy </a>   and <a style="font-size: 16px; color: #7b189f; text-decoration: underline #7b189f;" href="">SMS Terms.</a></p>
+            </h1>
+            <h1>
+              <a onclick="skipToHomePage()" id="skipToHomePages" style="font-size: 16px; color: #7b189f; text-decoration: underline #7b189f;" href="./index.html">No Thanks</a>
+            </h1>
         </div>
+
+
+
+        <!-- validateOtp -->
+        <div id="logIncpnt4" class="signIn-instruction">
+          <h1 style="white-space: nowrap;">
+            Confirm Verification Code
+          </h1>
+          <h1 id="emailEnteredValue" style="font-size: 16px; color: black; font-weight: 200;">
+            Enter the code we just texted you.
+          </h1>
+          <form  class="form" id="FormEmail4">
+            <div style="width: 50%;" class="searchCont marAuto">
+                <div class="btnAndInputBox">
+                  <!-- Hidden username field -->
+                  <input id="usernameInput3" type="text" style="position: absolute; left: -9999px;" aria-hidden="true" autocomplete="new-UserName">
+                  <input id="otpInput" style="margin: 0;" type="text"  placeholder="Veify Code" autocomplete="new-Number" required>
+                </div>
+            </div>
+            <div id="signInInPopUp">
+              <button onclick="validateOTP()" id="signIN" style="background-color: transparent; color: aliceblue;" type="submit">
+                <a id="ContinueButton1">Sign In</a></button>
+            </div>
+          </form>
+          <h1 style="font-weight: 200;">
+            <p>Didn't get a code? 
+              <a style="font-size: 16px; color: #7b189f; text-decoration: underline #7b189f;" href=""> Resend Code</a></p>
+          </h1>
+          <h1>
+            <a style="font-size: 16px; color: #7b189f; text-decoration: underline #7b189f;" href="./index.html">Maybe Later</a>
+          </h1>
+      </div>
+          </div>
+
       </div>
     </div>
-    <div class="Footer-Container">
-        <div class="innerComponants-footer">
+        <di v class="Footer-Container">
+          <div class="innerComponants-footer">
             <footer id="footer">
-                <div class="footer-Data">
-                    <div style="display: flex; ">
-                        <h4 style="white-space: nowrap;">
-                            © 2024, Rohit-Bhise
-                        </h4>
-                    </div>
+              <div class="footer-Data">
+                <div style="display: flex; ">
+                  <h4 style="white-space: nowrap;">
+                    © 2024, Rohit-Bhise
+                  </h4>
                 </div>
-                <div>
-                    <p style="white-space: wrap; align-items: center; align-content: center;justify-content: center;">
-                        Privacy & Terms <span>  |  </span> Your Privacy Rights and Choices
-                    </p>
-                </div>
+              </div>
+              <div>
+                <p style="white-space: wrap; align-items: center; align-content: center;justify-content: center;">
+                  Privacy & Terms <span>  |  </span> Your Privacy Rights and Choices
+                </p>
+              </div>
             </footer>
+          </div>
         </div>
-    </div>
-  </body>
+      </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./static/script/signIn.js"></script>
 </html>

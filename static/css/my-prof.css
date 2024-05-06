@@ -38,6 +38,9 @@
   }
   .signin-Form{
     margin: 0;
+    width: 60%;
+    height: auto;
+    
   }
   #footer p{
     text-decoration: underline;
@@ -90,7 +93,8 @@
     margin-bottom: 20px;
   }
 .signIn-instruction{
-    width: 60%;
+  margin: auto;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,9 +107,22 @@
     text-align: center;
     line-height: 40px;
 }
+.form{
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  position: relative;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+}
   .searchCont {
-    width: 90%;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     border: 1px solid black;
     border-radius: 8px;
     display: flex;
@@ -115,10 +132,18 @@
   }
 
   .btnAndInputBox {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
+
+  }
+  .btnAndInputBox input{
+    width: 100%;
+    height: 50px;
+
   }
   #topOfpopUp {
     display: flex;
@@ -151,7 +176,26 @@
   #signInInPopUp > #signIntxtInPopup {
     text-align: center;
   }
+  #signInInPopUp  button{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
   #signInInPopUp  a {
+    
+    /* margin: 0;
+    padding: 0; */
+    /* width: 100%; */
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
     color: #ffffff;
     text-decoration: none;
   }
@@ -159,3 +203,16 @@
     color: #7b189f;
     text-decoration: none;
   }
+
+  #logIncpnt2{
+    display: none;
+  }
+  
+  #logIncpnt3{
+    display: none;
+  }
+  
+  #logIncpnt4{
+    display: none;
+  }
+  

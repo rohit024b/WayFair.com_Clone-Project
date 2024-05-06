@@ -1198,5 +1198,24 @@ button:hover .proftxt {
     grid-template-columns: repeat(1, 1fr);
     gap: 18px;
   }
-  
+  .signin-Form{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .signIn-instruction{
+    margin: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      gap: 30px;
+  }
 }
