@@ -1,6 +1,6 @@
-# Wayfair Clone Project
+# Wayfair E-Commerce Website
 
-This project is a clone of the website [Wayfair](https://www.wayfair.com/), which specializes in household accessories and furniture. It was created using HTML, CSS, and JavaScript.
+This project is a E-Commerce website  replicating [Wayfair](https://www.wayfair.com/), which specializes in household accessories and furniture. It was created using HTML, CSS, and JavaScript.
 
 ## Features
 
